@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="urm-GE-hcd" customClass="DetailsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohH-qx-txp">
+                    <rect key="frame" x="16" y="318" width="343" height="30"/>
+                    <state key="normal" title="Something to change"/>
+                    <connections>
+                        <action selector="somethingToChangeButton:" destination="urm-GE-hcd" eventType="touchUpInside" id="0ED-FY-saD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHv-at-ICW">
+                    <rect key="frame" x="16" y="36" width="343" height="30"/>
+                    <state key="normal" title="Close"/>
+                    <connections>
+                        <action selector="closeDetailsViewButton:" destination="urm-GE-hcd" eventType="touchUpInside" id="TBb-so-X1h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PHv-at-ICW" firstAttribute="leading" secondItem="5NU-3p-sdv" secondAttribute="leading" constant="16" id="Fdc-bS-2Xs"/>
+                <constraint firstItem="5NU-3p-sdv" firstAttribute="trailing" secondItem="PHv-at-ICW" secondAttribute="trailing" constant="16" id="MlJ-HO-m5k"/>
+                <constraint firstItem="ohH-qx-txp" firstAttribute="top" secondItem="5NU-3p-sdv" secondAttribute="top" priority="750" constant="298" id="Ua8-26-QXU"/>
+                <constraint firstItem="PHv-at-ICW" firstAttribute="top" secondItem="5NU-3p-sdv" secondAttribute="top" constant="16" id="iC9-bn-oFD"/>
+                <constraint firstItem="5NU-3p-sdv" firstAttribute="bottom" secondItem="ohH-qx-txp" secondAttribute="bottom" priority="750" constant="319" id="n1R-28-EwX"/>
+                <constraint firstItem="5NU-3p-sdv" firstAttribute="trailing" secondItem="ohH-qx-txp" secondAttribute="trailing" constant="16" id="o1D-jZ-e9P"/>
+                <constraint firstItem="ohH-qx-txp" firstAttribute="leading" secondItem="5NU-3p-sdv" secondAttribute="leading" constant="16" id="oBJ-6V-N8a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5NU-3p-sdv"/>
+            <point key="canvasLocation" x="174" y="29"/>
+        </view>
+    </objects>
+</document>
